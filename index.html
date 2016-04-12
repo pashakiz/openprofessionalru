@@ -12,19 +12,61 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/media.css" />
 </head>
-<body>
-	<header>
-		<div class="container">header</div>
+<body data-stellar-background-ratio="0">
+	<header class="header">
+		<div class="header__logo"></div>
 	</header>
-	<section>
-		<div class="container">section</div>
+	<section class="section">
+		<div class="section__block section__block_wide">
+			<a class="section__lnk" href="https://www.coursera.org/learn/mathematics-and-python" target="_blank">Математика и Python для анализа данных</a>
+		</div>
+		<div class="section__block section__block_mini section__block_mini-first">
+			<div class="section__arrow section__arrow_absolute section__arrow_green section__arrow-01"></div>
+			<a class="section__lnk" href="https://www.coursera.org/learn/kombinatorika-dlya-nachinayushchikh" target="_blank">Комбинаторика</a>
+			<div class="section__arrow section__arrow_static section__arrow_green"></div>
+			<a class="section__lnk" href="https://www.coursera.org/learn/probability-theory-basics" target="_blank">Теория вероятностей</a>
+			<div class="section__arrow section__arrow_absolute section__arrow_green section__arrow-02"></div>
+		</div>
+		<div class="section__block section__block_center">
+			<div class="section__arrow section__arrow_absolute section__arrow_red section__arrow-04"></div>
+			<a class="section__lnk" href="https://www.coursera.org/learn/supervised-learning" target="_blank">Обучение на размеченных данных</a>
+			<div class="section__arrow section__arrow_static section__arrow_blue"></div>
+			<a class="section__lnk" href="https://www.coursera.org/learn/unsupervised-learning" target="_blank">Поиск структуры данных</a>
+			<div class="section__arrow section__arrow_static section__arrow_blue"></div>
+			<a class="section__lnk" href="https://www.coursera.org/learn/stats-for-data-analysis" target="_blank">Построение выводов по данным</a>
+			<div class="section__arrow section__arrow_static section__arrow_blue"></div>
+			<a class="section__lnk" href="https://www.coursera.org/learn/data-analysis-applications" target="_blank">Прикладные задачи анализа данных</a>
+			<div class="section__arrow section__arrow_static section__arrow_blue"></div>
+			<a class="section__lnk" href="https://www.coursera.org/learn/data-analysis-project" target="_blank">Анализ данных: финальный проект</a>
+			<div class="section__arrow section__arrow_absolute section__arrow_green section__arrow-03"></div>
+			<div class="section__arrow section__arrow_absolute section__arrow_red section__arrow-05"></div>
+		</div>
+		<div class="section__block section__block_mini section__block_mini-last section__block_center">
+			<a class="section__lnk" href="https://www.coursera.org/learn/probability-theory-basics" target="_blank">Продвинутый проект</a>
+			<div class="section__arrow section__arrow_absolute section__arrow_green section__arrow-06"></div>
+			<div class="section__line"></div>
+		</div>
+		<div class="section__icons section__block_center clearfix">
+			<div class="section__icon-left">
+				<div class="section__icon icon-crown"></div>
+				<div class="section__icon-text green">ПРОДВИНУТЫЙ<br>DATA SCIENTIST</div>
+			</div>
+			<div class="section__icon-right">
+				<div class="section__icon icon-hat"></div>
+				<div class="section__icon-text red">НАЧИНАЮЩИЙ<br>DATA SCIENTIST</div>
+			</div>
+		</div>
 	</section>
-	<footer>
-		<div class="container">footer</div>
+	<footer class="footer clearfix">
+		<div class="container">
+			<div class="footer__copy">&copy; 2016 Московский физико-технический институт</div>
+			<div class="footer__contact">эл. почта: info@mipt.ru</div>
+		</div>
 	</footer>
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv/es5-shim.min.js"></script>
@@ -33,7 +75,6 @@
 	<script src="js/html5shiv/respond.min.js"></script>
 	<![endif]-->
 	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.smoothscroll.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
 	<script src="js/common.js"></script>
