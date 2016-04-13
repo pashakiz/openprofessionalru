@@ -1,8 +1,8 @@
 html {
-	height: 100%;
+	// height: 100%;
 }
 body {
-	height: 100%;
+	// height: 100%;
 	font-family: "roadradio", sans-serif;
 	font-size: 18px;
 	line-height: 1;
@@ -17,12 +17,11 @@ body {
 	z-index: 1;
 }
 .bg {
-	// background-color: #000;
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
 	background-position: 50% 0;
-	background-size: contain;
+	background-size: cover;
 	position: absolute;
 	z-index: 1;
 }
