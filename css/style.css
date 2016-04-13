@@ -29,34 +29,63 @@ body {
 }
 .bggreen {
 	background-image: url("../img/sphere_g.png");
-	animation-name: bggreen;
-	animation-duration: 60000ms;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+	-webkit-animation: bggreen 60000ms infinite linear;
+	-moz-animation: bggreen 60000ms infinite linear;
+	-ms-animation: bggreen 60000ms infinite linear;
+	-o-animation: bggreen 60000ms infinite linear;
+	animation: bggreen 60000ms infinite linear;
 }
 .bgred {
 	background-image: url("../img/sphere_r.png");
-	animation-name: bgred;
-	animation-duration: 60000ms;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+	-webkit-animation: bgred 60000ms infinite linear;
+	-moz-animation: bgred 60000ms infinite linear;
+	-ms-animation: bgred 60000ms infinite linear;
+	-o-animation: bgred 60000ms infinite linear;
+	animation: bgred 60000ms infinite linear;
 }
+
+@-webkit-keyframes bggreen {
+	from { -webkit-transform:rotate(0deg); }
+	to { -webkit-transform:rotate(360deg); }
+}
+@-moz-keyframes bggreen {
+	from { -moz-transform:rotate(0deg); }
+	to { -moz-transform:rotate(360deg); }
+}
+@-ms-keyframes bggreen {
+	from { -ms-transform:rotate(0deg); }
+	to { -ms-transform:rotate(360deg); }
+}
+@-o-keyframes bggreen {
+	from { -o-transform:rotate(0deg); }
+	to { -o-transform:rotate(360deg); }
+}
+@-webkit-keyframes bgred {
+	from { -webkit-transform:rotate(0deg); }
+	to { -webkit-transform:rotate(-360deg); }
+}
+@-moz-keyframes bgred {
+	from { -moz-transform:rotate(0deg); }
+	to { -moz-transform:rotate(-360deg); }
+}
+@-ms-keyframes bgred {
+	from { -ms-transform:rotate(0deg); }
+	to { -ms-transform:rotate(-360deg); }
+}
+@-o-keyframes bgred {
+	from { -o-transform:rotate(0deg); }
+	to { -o-transform:rotate(-360deg); }
+}
+
 @keyframes bggreen {
-	from {
-		transform:rotate(0deg);
-	}
-	to {
-		transform:rotate(360deg);
-	}
+	from { transform:rotate(0deg); }
+	to { transform:rotate(360deg); }
 }
 @keyframes bgred {
-	from {
-		transform:rotate(0deg);
-	}
-	to {
-		transform:rotate(-360deg);
-	}
+	from { transform:rotate(0deg); }
+	to { transform:rotate(-360deg); }
 }
+
 .clearfix:after {
 	content: "";
 	display: block;
