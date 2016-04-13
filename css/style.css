@@ -70,6 +70,7 @@ body {
 	line-height: 22px;
 	padding: 12px;
 	color: #0172C0;
+	position: relative;
 }
 .section__lnk:hover {
 	border-color: #65B601;
@@ -78,6 +79,46 @@ body {
 .section__lnk:active {
 	border-color: #cd0948;
 	color: #cd0948;
+}
+.tooltip {
+	display: none;
+	width: 480px;
+	height: 136px;
+	border: 1px solid #65B601;
+	background-color: #F5F5F5;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	z-index: 100;
+}
+.tooltip__img {
+	float: left;
+	width: 136px;
+	height: 136px;
+}
+.tooltip__text {
+	float: left;
+	width: 308px;
+	max-height: 100px;
+	padding: 18px;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: left;
+	letter-spacing: 0;
+}
+.tooltip.wide {
+	width: 510px;
+}
+.tooltip.wide .tooltip__text {
+	width: 338px;
+}
+.section__lnk-container {
+	position: relative;
+}
+.section__lnk-container:hover .tooltip {
+	display: block;
 }
 .section__arrow {
 	display: inline-block;
